@@ -1,0 +1,22 @@
+<div class="container m-t-2">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="card card-block">
+        <h4 class="card-title">Sign up!</h4>
+        <%= form_for @user do |f| %>
+          <%= f.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+          <br>
+          <%= f.text_field :first_name, class: "form-control", placeholder: "Last Name" %>
+          <br>
+          <%= f.text_field :email, class: "form-control", placeholder: "Email" %>
+          <br>
+          <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+          <br>
+          <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Password Confirmation" %>
+          <br>
+          <%= f.submit "Sign Up", class: "btn btn-lg btn-block btn-success" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,22 +1,24 @@
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-  <div class="nav navbar-nav">
-    <a class="navbar-brand" href="#">Footrucker</a>
-  </div>
-  <div class="nav navbar-nav pull-xs-right">
-    <% if signed_in_user? %>
-      <%= link_to "Favorites", "#", class: "nav-item nav-link" %>
-      <%= link_to "Account", "#", class: "nav-item nav-link" %>
-      <%= link_to "Signout", session_path, method: :delete, class: "nav-item nav-link" %>
-    <% else %>
-      <%= form_tag session_path, class: "form-inline pull-xs-right" do %>
-        <%= text_field_tag :email, nil, placeholder: "Email", class: "form-control form-control-sm" %>
-        <%= password_field_tag :password, nil, placeholder: "Password", class: "form-control form-control-sm" %>
-        <label>
-          <%= check_box_tag :remember_me, class: "form-control"%>
-          Remember me?
-        </label>
-        <%= submit_tag "Sign in", class: "btn btn-success-outline btn-sm" %>
+<div class="container">
+  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="nav navbar-nav">
+      <a class="navbar-brand" href="#">Footrucker</a>
+    </div>
+    <div class="nav navbar-nav pull-xs-right">
+      <% if signed_in_user? %>
+        <%= link_to "Favorites", "#", class: "nav-item nav-link" %>
+        <%= link_to "Account", "#", class: "nav-item nav-link" %>
+        <%= link_to "Signout", session_path, method: :delete, class: "nav-item nav-link" %>
+      <% else %>
+        <%= form_tag session_path, class: "form-inline pull-xs-right" do %>
+          <%= text_field_tag :email, nil, placeholder: "Email", class: "form-control form-control-sm" %>
+          <%= password_field_tag :password, nil, placeholder: "Password", class: "form-control form-control-sm" %>
+          <label>
+            <%= check_box_tag :remember_me, class: "form-control"%>
+            Remember me?
+          </label>
+          <%= submit_tag "Sign in", class: "btn btn-success-outline btn-sm" %>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
-</nav>
+    </div>
+  </nav>
+</div>
