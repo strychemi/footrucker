@@ -12,7 +12,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'binding_of_caller'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'rails-assets-tether', '>= 1.1.0'
 gem 'httparty'
+
 
 group :development, :test do
   gem 'pry-byebug'

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resource :session, only: [:create, :destroy]
   get '/dashboard' => 'users#dashboard'
   root 'users#new'
   # The priority is based upon order of creation: first created -> highest priority.
