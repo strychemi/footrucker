@@ -11,7 +11,6 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'binding_of_caller'
-gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'httparty'
 
