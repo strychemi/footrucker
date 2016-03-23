@@ -13,8 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'binding_of_caller'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'httparty'
 
 group :development, :test do
   gem 'pry-byebug'
