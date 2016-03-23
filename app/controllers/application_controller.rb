@@ -39,7 +39,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_logout
-    redirect_to user_path(current_user) if signed_in_user?
+    redirect_to dashboard_path if signed_in_user?
   end
 
   def require_current_user
