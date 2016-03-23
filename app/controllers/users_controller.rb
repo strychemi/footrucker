@@ -17,7 +17,6 @@ class UsersController < ApplicationController
       redirect_to dashboard_path
     else
       flash.now[:danger] = "Failed to create User!"
-      @user.build_profile
       render :new
     end
   end
